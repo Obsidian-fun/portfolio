@@ -1,0 +1,31 @@
+{
+  "name": "personal_web_portfolio",
+  "version": "1.0.0",
+  "description": "'Tis my personal web portfolio.",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --watch server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Obsidian-fun/Portfolio-Website.git"
+  },
+  "keywords": [
+    "portfolio",
+    "obsidian-fun"
+  ],
+  "author": "Obsidian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Obsidian-fun/Portfolio-Website/issues"
+  },
+  "homepage": "https://github.com/Obsidian-fun/Portfolio-Website#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "gsap": "^3.12.5"
+  }
+}

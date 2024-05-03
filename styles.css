@@ -1,0 +1,636 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  overscroll-behavior: contain;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html,body{
+  font-family:"Neue Montreal";
+  height: 100%;
+}
+
+h1{
+  color: #fff;
+  font-size: 80px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+}
+
+@media(max-width:576px) {
+  h1{
+    font-size: 20px;
+  }
+}
+
+.letters{
+  color: #fff;
+  font-family: "PP Neue Montreal";
+}
+
+.navbar{
+  position:absolute;
+  top: 5%;
+  right: 20%; 
+  z-index: 10000;
+}
+
+.link{
+  display: inline-block;
+  color: #0b0b0b;
+  text-decoration: none;
+  font-size: 18px; 
+  padding-right: 8px;
+}
+
+@media(max-width:576px) {
+  .link{
+    font-size:10px;
+  }
+}
+
+
+.link::after {
+  content: '';
+  display: block; 
+  width: 0%;
+  height: 2px;
+  background: #0b0b0b;
+  transition: width .3s;
+}
+
+.link:hover::after {
+  width: 100%;
+  transition: width;
+}
+
+
+p {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  width: 50%;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.logo {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 2em;
+  width: 18px;
+  height: 18px;
+  background: red;
+  border-radius: 100%;
+  z-index: 10000;
+}
+
+.header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: flex;
+  width: 100%;
+  z-index: 2; 
+}
+
+
+
+.letters {
+  flex: 1;
+  display: flex;
+  text-transform: uppercase;
+  background: none;
+  color: black;
+}
+
+.letters > div {
+  flex: 1;
+  font-size: 10vw;
+  font-weight: 400;
+  text-align: center;
+}
+
+@media(max-width:576px) {
+  .headers {
+    width: 50px;
+  }
+
+  .letters > div {
+    font-size: 10vw;
+  }
+}
+
+.website-content {
+  position: relative;
+  top: 0; 
+  width: 100vw;
+  max-width: 100vw;
+  min-height: 100vh; 
+  max-height: 100vh;
+}
+
+.img-holder {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 100vh; 
+  clip-path: polygon(37.5% 20%, 62.5% 20%, 62.5% 80%, 37.5% 80%);
+  background: #fff;
+  transform: rotate(30deg);
+}
+
+
+.img-holder img {
+  position: relative;
+  transform: scale(0.6); 
+}
+
+@media(max-width:576px) {
+  .img-holder {
+    top: 42vh;
+    left: 10%;
+    width: 80%;
+    height: 100%;
+    margin-bottom: 80vh;
+  }
+}
+
+.content-holder {
+  position: relative;
+  top: 300px;
+  width: 106vw;
+  background: #0b0b0b;
+  color: #fff;
+  padding: 1em;
+  height: auto;
+}
+
+@media(max-width:576px) {
+  .html {
+    width: 100vw;
+  }
+      
+  .website-content{
+    width: 100vw;
+  }
+
+
+  .content-holder {
+    width: 100vw;
+    overscroll: none;
+  }
+}
+
+.row {
+  margin: 2em 1em;
+  opacity: 0;
+  transition: all 2s;
+}
+
+.img {
+  width: 300px;
+  height: 375px;
+}
+
+@media(max-width:576px) {
+  width: 50px;
+  height: 75px;
+}
+
+.row:nth-child(2){
+  display: flex;
+  padding-bottom: 25vh;
+}
+
+@media(max-width:576px) {
+  .row:nth-child(2) {
+     padding-bottom: 25vh;
+  }
+}
+
+.row:nth-child(2) p{
+  font-size: 25px;
+  font-weight: 400;
+  font-family: "Neue Montreal";
+  margin-top: 10%;
+  margin-left: 5%;
+}
+
+@media(max-width:576px) {
+  .row:nth-child(2) p{
+     font-size: 10px;
+     margin-left: 2%;
+  }
+
+  .row:nth-child(2) img {
+      width: 100px;
+      height: 175px;
+  }
+
+ .row:nth-child(3) img {
+     width: 100px;
+     height: 175px;
+     left: 0%;
+ }
+
+ .row:nth-child(4) img {
+     width: 100px;
+     height: 175px;
+ }
+}
+
+.row:nth-child(2) .img {
+  position: relative;
+  left: 10%;
+}
+
+.row:nth-child(3) {
+  display: flex;
+  padding-bottom: 25vh;
+}
+
+.row:nth-child(3) .img {
+  position: relative;
+  left: 15%;
+}
+
+.row:nth-child(3) p {
+  font-size: 25px;
+  font-weight: 400;
+  font-family:"Neue Montreal";
+  margin-left: 20%;
+  margin-top: 10%;
+}
+
+@media(max-width: 576px) {
+  .row:nth-child(3) p {
+    font-size: 10px;
+  }
+}
+
+.row:nth-child(4) {
+  display: flex;
+  padding-bottom: 25vh;
+}
+
+.row:nth-child(4) .img {
+  position:relative;
+  left: 10%
+}
+
+.row:nth-child(4) p {
+  font-size: 25px;
+  font-weight: 400;
+  font-family:"neue montreal";
+  margin-top: 10%;
+  margin-left: 5%;
+}
+
+@media(max-width: 576px) {
+  .row:nth-child(4) p {
+    font-size: 10px;
+  }
+}
+
+.row:nth-child(5) .skills p{
+  font-size: 25px;
+  font-weight: 400;
+  font-family:"Neue Montreal";
+  padding-bottom: 1em;
+}
+
+
+.row:nth-child(5) .skills {
+  font-size: 25px;
+  font-weight: 400;
+  font-family:"Neue Montreal";
+  margin-top: 10%;
+  margin-left: 5%;
+  margin-bottom: 20%;
+}
+
+@media(max-width:576px) {
+  .row:nth-child(5) .skills p{
+    font-size: 10px;
+  }
+
+  .row:nth-child(5) .skills{
+    font-size: 7px;
+  }
+}
+
+.row:nth-child(5) .skills .titles {
+  text-decoration: underline;
+  text-decoration-thickness: 0.1em;
+}
+
+.row:nth-child(6) {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.row:nth-child(6) .img-rd {
+  position: relative;
+  left: 0%;
+  transform: scale(0.7);
+}
+
+.row:nth-child(6) p {
+  font-size: 25px;
+  font-weight: 400;
+  font-family:"Neue Montreal";
+  margin-top: 10%;
+}
+
+@media(max-width:576px) {
+  .row:nth-child(6) p{
+    font-size: 10px;
+  }
+}
+
+.row:nth-child(7) {
+  display: flex;
+}
+
+.row:nth-child(7) p {
+  font-size: 25px;
+  font-weight: 400;
+  font-family:"Neue montreal";
+  margin-top: 10%;
+  margin-left: 5%;
+}
+
+@media(max-width:576px) {
+  .row:nth-child(7) p{
+    font-size: 10px;
+  }
+}
+
+.show {
+  opacity: 1;
+}
+
+
+.cta p {
+  font-size: 25px;
+  font-weight: 400;
+  font-family:"neue montreal";
+  margin-top: 10%;
+  margin-left: 5%;
+}
+
+@media(max-width:576px) {
+  .cta p {
+    font-size:10px;
+    display: inline; 
+  }
+}
+
+.wrapper{
+    padding: 10px 10%;
+}
+
+#card-area{
+    padding: 50px 0;
+}
+
+.box-area{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+    margin-top: 50px;
+    height: 600px;
+}
+
+.box {
+	border-radius: 10px;
+	position: relative;
+	overflow: hidden;
+	box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+}
+
+.box img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.overlay {
+	width: 100%;
+	height: 0;
+	background: linear-gradient(transparent,#1c1c1c 58%);
+	border-radius: 10px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 40px;
+	text-align: center;
+	font-size: 14px;
+	transition: height 0.5s;
+}
+
+.overlay h3 {
+	font-weight: 500;
+	margin-bottom: 5px;
+	margin-top: 80%;
+	font-family: 'Bebas Neue', sans-serif;
+	font-size: 30px;
+	letter-spacing: 2px;
+}
+
+.overlay p{
+  padding-bottom: 50px;
+}
+
+.box:hover img{
+      transform: scale(1.1);
+}
+
+.box:hover .overlay{
+    height: 100%;
+}
+
+.fl-link {
+  color: #fff;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+
+h5{
+ font-size: 25px;
+ font-weight: 400;
+ font-family:"neue montreal";
+ margin-top: 10%;
+ margin-left: 5%;
+}
+
+@media(max-width:576px) {
+  h5 {
+    font-size: 10px;
+  }
+}
+
+.email {
+  margin-top: 0;
+  width: 1000px;
+  height: 50px;
+  font-size: 20px;
+  margin-left: 5%;
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  outline: none;
+}
+
+@media(max-width:576px) {
+  .email {
+    width: 300px;
+    font-size: 10px;
+  }
+}
+
+.subject {
+  width: 1000px;
+  height: 50px;
+  font-size: 20px;
+  margin-left: 5%;
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  outline: none;
+}
+
+@media(max-width:576px) {
+  .subject{
+    width: 300px;
+    font-size: 10px;
+  }
+}
+
+
+.email-body{
+  width: 1000px;
+  height: 150px;
+  font-size:20px;
+  margin-left: 5%;
+  margin-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 50px;
+  margin-bottom: 2em;
+  background: none;
+  border: 1px solid #fff;
+  color: #fff;
+  outline: none;
+}
+
+@media(max-width:576px) {
+  .email-body{
+    width: 300px;
+    font-size: 10px;
+  }
+}
+
+#contact-form {
+  display: block;
+}
+
+.cta-button {
+  padding: 15px 20px 15px 20px;
+  font-size: 25px;
+  margin-left: 10%;
+  margin-top: 2%;
+  display: block;
+}
+
+.follow-up {
+ display: none;
+}
+
+.follow-up p {
+  margin-left: 5%;
+  font-family:"Neue Montreal";
+  font-size: 25px;
+  font-weight: 400;
+  border: 2px solid #fff;
+  /*padding top right bottom left*/
+  padding: 3em 3em 3em 5em; 
+  margin-bottom: 5em;
+}
+
+.cta-button {
+  display: block;
+  color: white;
+  text-decoration: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+  padding: 16px 60px;
+  font-size: .75em;
+  letter-spacing: .35em; 
+  text-align: center;
+  text-transform: uppercase;
+  border: 1px solid #fff;
+  transition: all .2s ease;
+}
+
+ .cta-button:before, 
+ .cta-button:after {
+   content: "LET'S WORK";
+   position: absolute;
+     top: 0;
+     left: 0;
+   padding: 8px 0;
+   width: 100%;
+   -webkit-clip: rect(0px, 0px, 0px, 0px);
+   clip: rect(0px, 0px, 0px, 0px);
+   background: #fff;
+   color: #000;
+ }
+ 
+ .cta-button:before {
+   left: -3px;
+   top: -2px;
+   text-shadow: 2px 0 #fff;
+   box-shadow: 2px 0 #fff;
+ }
+
+ .cta-button:after {
+   left: 2px;
+   bottom: -2px;
+   text-shadow: -1px 0 #fff;
+   box-shadow: -1px 0 #fff;
+ }
+
+ .cta-button:hover {
+   background: white;
+   color: black;
+ }

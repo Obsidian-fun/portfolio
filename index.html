@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Web Portfolio </title>
+  <link rel="stylesheet" href="styles.css">
+
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script defer src="./gsap.js" type="module"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+
+</head>
+ 
+<body>
+  <div class="navbar">
+    <a class="link" href="https://github.com/Obsidian-fun">Github</a>
+    <a  class="link" href="#">Blogs</a>
+    <a  class="link" href="#card-area">Work</a>
+    <a  class="link" href="https://twitter.com/funobsidian">Twitter</a>
+  </div>
+
+<div class="logo">
+
+</div>
+
+<div class="header">
+  <div class="letters">
+    <div>H</div>
+    <div>I</div>
+    <div>,</div>
+    <div></div>
+    <div>I</div>
+    <div></div>
+    <div>A</div>
+    <div>M</div>
+    <div></div>
+  </div>
+  <div class="letters">
+    <div>O</div>
+    <div>B</div>
+    <div>S</div>
+    <div>I</div>
+    <div>D</div>
+    <div>I</div>
+    <div>A</div>
+    <div>N</div>
+  </div> 
+</div>
+
+
+<div class="website-content"> 
+
+  <div class="img-holder">
+    <img src="./assets/spiral.gif" alt="spiral">
+  </div>
+
+<div class="content-holder">
+  <div class="row">
+    <h1>BACKGROUND</h1>
+  </div>
+
+  <div class="row">
+    <p>Caffeine driven Full Stack Developer. </p>
+    <img 
+    loading="lazy" 
+    role="presentation" 
+    class="img" 
+    src="./assets/img-1.jpg" 
+    decoding="async"
+    fetchpriority="high"
+    alt="img1">
+  </div>
+
+ <div class="row">
+    <img 
+    loading="lazy" 
+    role="presentation" 
+    class="img" 
+    src="./assets/img-2.jpg" 
+    decoding="async"
+    fetchpriority="high"
+    alt="img2">
+
+   <p> I wanted to learn web development in July, 2023.   </p>
+ </div>
+
+ <div class="row">
+   <p>And now I build things around the internet...</p>
+    <img 
+    loading="lazy" 
+    role="presentation" 
+    class="img" 
+    src="./assets/img-3.avif" 
+    decoding="async"
+    fetchpriority="high"
+    alt="img3">
+
+ </div>
+
+ <div class="row">
+       <div class="skills">
+       <p>With the following tech stack, </p>
+       <table>
+         <tr class="titles">
+           <td width=225> Front End </td>
+           <td width=225> Back End </td>
+           <td width=225> Scripting</td>
+           <td width=225> Database </td>
+           <td width=225> Containerization </td>
+         </tr>
+         <tr> 
+            <td>Javascript</td>
+            <td>NodeJS</td>
+            <td>Bash</td>
+            <td>MySQL</td>
+            <td>Docker</td>
+          </tr>
+          <tr>
+            <td>HTML</td>
+            <td>Golang</td>
+            <td>Python</td>
+            <td>MariaDB</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>CSS</td>
+            <td></td>
+            <td></td>
+            <td>Redis</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>HTMX</td>
+            <td></td>
+            <td></td>
+            <td>SQLite3</td>
+            <td></td>
+          </tr>
+       </table>
+       </div>
+</div>
+
+ <div class="row">
+    <img 
+    loading="lazy" 
+    role="presentation" 
+    class="img-rd" 
+    src="./assets/ResponsiveDesign.png" 
+    decoding="async"
+    fetchpriority="high"
+    alt="responsive_design">
+
+    <p>And responsive design.</p>
+ </div>
+
+ <div class="row">
+    <p>Here are a few of my personal projects,</p>
+ </div>
+
+ <!-- Place floating cards here -->
+<div id="card-area">
+		<div class="wrapper">
+			<div class="box-area">
+
+				<div class="box">
+          <a class="fl-link" href="https://supercool.lol"></a>
+					<img alt=""        
+          src="./assets/fl-1.png">
+					<div class="overlay">
+						<h3>SuperCool</h3>
+            <p> A fun chatroom, let's chat!  </p>
+					</div>
+				</div>
+
+				<div class="box" >
+          <a class="fl-link" href="https://digital-garden.co"></a>
+					<img alt="" src="./assets/fl-2.png">
+					<div class="overlay">
+						<h3>Digital Garden</h3>
+            <p> An aggregation of the latest products in digital marketing </p>
+					</div>
+				</div>
+
+				<div class="box">
+         <a class="fl-link" href="#"></a> 
+					<img alt="" src="./assets/fl-3.png">
+					<div class="overlay">
+						<h3>Obsidian Dev</h3>
+            <p>This Portfolio Website</p>
+					</div>
+				</div>
+
+				<div class="box">
+         <a class="fl-link" href="#contact-form"></a>          
+					<img alt="" src="./assets/fl-4.jpeg">
+					<div class="overlay">
+						<h3>Future Project?</h3>
+						<p> Let's Get in Touch! </p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+ <!-- Float cards end -->
+
+  <div class="cta">
+  <p>Clicking buttons can be fun! Give it a try...</p>
+  </div>
+
+  <form action="/contact" id="contact-form" method="POST">
+    <div>
+    <h5>Email</h5>
+    <input class="email" type="email" required autocomplete="off">
+    <h5> Subject </h5>
+    <input class="subject" type="text" required autocomplete="off">
+    <h5> Body </h5>
+    <textarea class="email-body" ></textarea>
+    </div>
+    <button type="submit" class="cta-button">Let's work</button>
+  </form>
+
+  <div class="follow-up">
+    <p> Thank you for reaching out!<br> I will be in touch with you soon </p>
+  </div>
+
+
+
+</div> <!-- Ending for content-holder -->
+</div> <!-- Ending for website-content -->
+
+<script>
+
+   const form = document.querySelector("#contact-form");
+   const body = document.querySelector(".email-body");
+   const button = document.querySelector(".cta-button");
+
+   // Allow line-breaks by pressing 'enter' key
+   body.addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+        event.preventDefault(); 
+
+      let cursorPos = this.selectionStart; 
+      let textBeforeCursor = this.value.substring(0, cursorPos); 
+      let textAfterCursor = this.value.substring(cursorPos); 
+      this.value = textBeforeCursor + "\n" + textAfterCursor; 
+      this.selectionStart = this.selectionEnd = cursorPos + 1; 
+    }
+   });
+
+// implemented from https://www.kirilv.com/canvas-confetti/
+
+/* TODO: Add wonderful confetti 
+  button.addEventListener("click", function(event) {
+      event.preventDefault();
+
+      confetti({
+      particleCount: 100,
+      spread: 70,
+      origin: { x:0.2, y: 0.8 }
+    });
+    });    
+*/
+
+   // Email submission form,
+   form.addEventListener("submit", async(event)=>{
+      event.preventDefault();
+
+      let  email      =  document.querySelector(".email").value;
+      let  subject    =  document.querySelector(".subject").value;
+      let  emailBody  =  document.querySelector(".email-body").value;
+      let  message    =  document.querySelector(".follow-up");
+
+      const response = await fetch('http://127.0.0.1:3500/contact', {
+                    method: 'POST',
+                    headers: {
+                          'Content-Type':'application/json; charset=UTF-8',
+                        },
+                    body: JSON.stringify({ 
+                          email:email, 
+                          subject:subject, 
+                          emailBody:emailBody,
+                        }),
+                  })
+
+                  try {
+                      const data = await response.json();
+                      console.log(data);
+                      form.style.display = 'none';
+                      button.style.display = 'none';
+                      message.style.display = 'block';
+                      
+                  }
+
+                  catch(err){
+                      console.log(err);
+                  }
+    });
+
+
+</script>
+
+</body>
+</html>
